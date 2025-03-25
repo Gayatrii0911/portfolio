@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Combined CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="landing" id="home">
+        <div class="info">
+            <h1>Hi, I'm <span id="typing-text"></span></h1>
+            <p>"Full-Stack Web Developer passionate about creating seamless and efficient digital experiences. Skilled in MERN stack, Java, and Python."</p>
+            <a href="assets/Resume.pdf" class="btn1" download="Gayatri_Mahajan_Resume.pdf">
+                <i class="fas fa-download"></i> Resume
+            </a>
+        </div>
+
+        <div id="lottie-animation" style="width: 300px; height: 300px;"></div>
+
+    </section>
+
+     <!-- Title -->
+     <div class="header0" id="skills">
+        <h1><i class="fas fa-tools"></i> My Expertise</h1>
+    </div>
+    
+
+    <!-- !-- Skills Container --> 
+    <section class="cards-container" >
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">HTML, CSS</span>
+                <p class="card-content">
+                    I have frontend expertise in HTML and CSS, crafting responsive and stylish web designs.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://cloud2data.com/wp-content/uploads/2023/01/HTML-CSS-Review.png" alt="Card Image">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">JavaScript</span>
+                <p class="card-content">
+                    I have expertise in JavaScript for dynamic and interactive web development, enhancing user experience.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHnJDLOcdm_0b6N6kNj-1OvO9KhKYgqIy0w&s" alt="Card Image">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">MySQL</span>
+                <p class="card-content">
+                    I have knowledge of MySQL for database management, handling queries, and data optimization.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="Card Image">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">DSA</span>
+                <p class="card-content">
+                    I have knowledge of Data Structures and Algorithms, optimizing problem-solving and code efficiency.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://play-lh.googleusercontent.com/9zvNJHedNg_6lOdwcodODMVsyeHKxuTIpnbBzomRGGZAp_vKVXnd5SlF8XZcXyGYjQ" alt="Card Image">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">C</span>
+                <p class="card-content">
+                    I have knowledge of C for efficient programming, problem-solving, and system-level development.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1853px-C_Programming_Language.svg.png" alt="Card Image">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">Java</span>
+                <p class="card-content">
+                    I have knowledge of Java for object-oriented programming, application development, and problem-solving.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="Card Image">
+            </div>
+        </div>
+
+        <!-- New Card 1 -->
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">Python</span>
+                <p class="card-content">
+                    I have knowledge of Python for scripting, automation, and application development.
+                </p>
+             
+            </div>
+            <div class="date-box">
+                <img src="https://149860134.v2.pressablecdn.com/wp-content/uploads/pythoned.png" alt="Card Image">
+            </div>
+        </div>
+
+        <!-- New Card 2 -->
+        <div class="card">
+            <div class="content-box">
+                <span class="card-title">MERN</span>
+                <p class="card-content">
+                    I have knowledge of the MERN stack (MongoDB, Express.js, React, Node.js) for full-stack web development.
+                </p>
+                
+            </div>
+            <div class="date-box">
+                <img src="https://arkinfosoft.com/media/vxylqtub/group-1321316476.png" alt="Card Image">
+            </div>
+        </div>
+    </section>
+
+     <!-- Title -->
+     <div class="header1" id="projects">
+        <h1><i class="fas fa-folder-open"></i> Projects & Creations</h1>
+    </div>
+
+    <!-- Projects Container -->
+    <section class="projects-grid" >
+        
+        <div class="project flip-card">
+            <div class="flip-card-inner">
+                <!-- Front Side -->
+                <div class="flip-card-front">
+                    <video src="project1.mp4" autoplay loop muted></video>
+                    <div class="overlay">
+                        <h2>Smart Vehicle Rentals</h2>
+                        <p>Rent, track, and manage vehicles easily.</p>
+                        <button class="btn2 flip-btn">View Project</button>
+                    </div>
+                </div>
+                <!-- Back Side (Video) -->
+                <div class="flip-card-back">
+                    <video src="assets/rental.mp4" autoplay loop muted></video>
+                    <button class="btn2 flip-back-btn">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <video src="project2.mp4" autoplay loop muted></video>
+                    <div class="overlay">
+                        <h2> Freelancer Resource Hub</h2>
+                        <p>Essential tools for gig workers' success.</p>
+                        <button class="btn2 flip-btn">View Project</button>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <video src="assets/freelancer.mp4" autoplay loop muted></video>
+                    <button class="btn2 flip-back-btn">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <video src="project3.mp4" autoplay loop muted></video>
+                    <div class="overlay">
+                        <h2>Virtual Banking System</h2>
+                        <p>Secure banking with seamless transactions.</p>
+                        <button class="btn2 flip-btn">View Project</button>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <video src="assets/banking.mp4" autoplay loop muted></video>
+                    <button class="btn2 flip-back-btn">Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <video src="project4.mp4" autoplay loop muted></video>
+                    <div class="overlay">
+                        <h2>SpeedoType</h2>
+                        <p>Fast, accurate, and fun typing practice.</p>
+                        <button class="btn2 flip-btn">View Project</button>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <video src="assets/speedotype.mp4" autoplay loop muted></video>
+                    <button class="btn2 flip-back-btn">Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Background Animation -->
+    <div class="animated-bg"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="header">
+            <h1><i class="fas fa-envelope"></i> Contact Me</h1>
+            <p>Let's connect and create something amazing together!</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="status-message"></p> <!-- To display success/error messages -->
+                </form>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <h2>Follow Me</h2>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/gayatri-mahajan-0015a622b" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Gayatrii0911" class="social-icon github"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/gayatriii_._" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:gayatrimahajan091105@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Navbar and Flip Cards -->
+    <script>
+        // Navbar Animation
+        window.addEventListener('scroll', function() {
+            let navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        //project
+        document.querySelectorAll('.flip-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        this.closest('.flip-card').classList.add('flipped');
+    });
+});
+
+document.querySelectorAll('.flip-back-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        this.closest('.flip-card').classList.remove('flipped');
+    });
+});
+
+
+    // Typing Effect
+const text = "Gayatri Mahajan";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 150); // Adjust speed here (150ms per character)
+    }
+}
+
+// Start typing effect when page loads
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg', // Use 'canvas' or 'html' if needed
+    loop: true, 
+    autoplay: true, 
+    path: 'assets/animation.json' // Ensure this matches the correct path
+});
+
+
+// Contact Form Submission
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+    
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+    let statusMessage = document.getElementById("status-message");
+
+    if (name === "" || email === "" || message === "") {
+        statusMessage.textContent = "Please fill in all fields.";
+        statusMessage.style.color = "red";
+        return;
+    }
+    // Initialize Email.js (Replace 'your_user_id' with your Email.js User ID)
+        emailjs.init("_5ijt6i0xAutEEilD");
+
+        // Use Email.js to send the message without a backend
+        emailjs.send("service_123456", "template_111", {
+        name: name,
+        email: email,
+        message: message
+    }).then(
+        function(response) {
+            console.log("SUCCESS!", response);
+            statusMessage.textContent = "Message sent successfully!";
+            statusMessage.style.color = "green";
+            document.getElementById("contact-form").reset();
+        },
+        function(error) {
+            console.log("FAILED...", error);
+            statusMessage.textContent = "Failed to send message. Try again later.";
+            statusMessage.style.color = "red";
+        }
+    );
+});
+
+
+
+    </script>
+
+
+
+</body>
+</html>
